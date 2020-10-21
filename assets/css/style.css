@@ -4,18 +4,50 @@
     background-image: url(../images/resumebackground.JPG);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto;
+    background-size: cover;
 }
 
 .background-gray {
     background-color: grey;
 }
 
+.background-home-text {
+    background-color: rgba(255, 255, 255, .5);
+}
+
 /* this styles each article height*/
 .page {
     height: 90vh;
 }
+/* add custom li symbol */
+ol {
+    list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+ol li {
+    padding-left: 1em;
+    text-indent: -1em;
+  }
+  
+ol li:before {
+    content: "+";
+    padding-right: 5px;
+  }
+/* resize image */
+.image-resize{
+    width: 100%;
+    height: auto;
+}
+/* adds a shadow to images */
+.blackShadows {
+    box-shadow: 10px 10px 5px black;
+}
 
+/* footer */
+footer {
+    font-size: xx-small;
+}
 /* fixes tabs on small devices */
 @media only screen and (max-width: 992px){
 .take-all-space-you-can{

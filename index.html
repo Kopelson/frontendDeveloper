@@ -46,9 +46,8 @@
         </nav>
     </header>
     <main class="container-fluid tab-content" id="nav-tabContent">
-        <article class="row page background-home tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-            <div class="col my-auto">
-                <section>
+        <article class="row page background-home pt-5 tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <section class="col-6 p-5 mx-auto border border-dark background-home-text">
                     <div class="row">
                         <div class="col d-flex justify-content-center">
                             <h1>Kenneth Kopelson</h1>    
@@ -60,22 +59,19 @@
                         </div>     
                     </div>
                 </section> 
-            </div> 
         </article> 
-        <article class="row page tab-pane fade show" id="nav-focus" role="tabpanel" aria-labelledby="nav-focus-tab">
-            <section>
-                <img src="./assets/images/StockSnap1.jpg" alt="Stock photo of an office" class="blackShadows">      
-            </section>
-            <section>
-                <h1>My passion and focus is web development.</h1>
-                <p>
-                I have the skills needed to be your full stack web developer.<br><br>
-                -Build incredible front-end applications<br>
-                -Smooth & steady front-end workflow<br>
-                -Work well with teams & familiar with Git<br>
-                -Update data with sever API’s<br>
-                </p>
-            </section>   
+        <article class="row page tab-pane p-3 fade show" id="nav-focus" role="tabpanel" aria-labelledby="nav-focus-tab">
+                <section class="col-lg-6 mx-auto">
+                    <h2>My passion and focus is web development.</h2>
+                    <p>I have the skills needed to be your full stack web developer.</p>
+                    <ol>
+                        <li>Build incredible front-end applications</li>
+                        <li>Smooth & steady front-end workflow</li>
+                        <li>Work well with teams & familiar with Git</li>
+                        <li>Update data asynchronously with API’s</li>
+                    </ol>   
+                    <img src="./assets/images/StockSnap1.jpg" alt="Stock photo of an office" class="blackShadows image-resize">      
+                </section> 
         </article>
         <article class="row page background-gray tab-pane fade show" id="nav-portfolio" role="tabpanel" aria-labelledby="nav-portfolio-tab">
             <section>
@@ -111,8 +107,10 @@
     </main>
     <footer class="fixed-bottom">
         <nav class="navbar navbar-light bg-light">
-            <small>© 2020 Kenneth Kopelson. All rights reserved. Front-end web developer. </small>
-            <div class="d-flex">
+            <div class="mx-auto">
+                <small>© 2020 Kenneth Kopelson. All rights reserved. Front-end web developer. </small>  
+            </div>
+            <div class="mx-auto">
             <a href="http://www.instagram.com/kenjamink" target="_blank">
                 <img src="./assets/images/instagram.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
             </a>
