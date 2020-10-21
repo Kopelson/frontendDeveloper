@@ -17,6 +17,9 @@
 }
 
 /* fixes tabs on small devices */
+@media only screen and (max-width: 992px){
 .take-all-space-you-can{
     width:100%;
 }
+}
+
