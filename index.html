@@ -16,45 +16,53 @@
 <body>
     <header class="sticky-top"> 
         <!-- Bootstrap Nav Component -->
-        <nav class="navbar navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">
                 <img src="./assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
                 Kenneth Kopelson
               </a>
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link text-body" href="#project-page">PORTFOLIO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-body" href="#about-page">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active text-body" href="#title-page">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-body" href="#focus-page">FOCUS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-body" href="#resume-page">RESUME</a>     
-                </li>
-            </ul>
+              <button class="navbar-toggler pt-1 pb-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="header-button">
+                <span class="navbar-toggler-icon"></span>
+              </button> 
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="nav navbar nav-tabs take-all-space-you-can" id="nav-tab" role="tablist">
+                    <li class="nav-item take-all-space-you-can li-selector">
+                        <a class="nav-link active text-body" href="#nav-home" id="nav-home-tab" data-toggle="tab" role="tab" aria-controls="nav-home" aria-selected="true">HOME</a>
+                    </li>
+                    <li class="nav-item take-all-space-you-can li-selector">
+                        <a class="nav-link text-body" href="#nav-focus" id="nav-focus-tab" data-toggle="tab" role="tab" aria-controls="nav-focus" aria-selected="false">FOCUS</a>
+                    </li>
+                    <li class="nav-item take-all-space-you-can li-selector">
+                        <a class="nav-link text-body" href="#nav-portfolio" id="nav-portfolio-tab" data-toggle="tab" role="tab" aria-controls="nav-portfolio" aria-selected="false">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item take-all-space-you-can li-selector">
+                        <a class="nav-link text-body" href="#nav-about" id="nav-about-tab" data-toggle="tab" role="tab" aria-controls="nav-about" aria-selected="false">ABOUT</a>
+                    </li>
+                    <li class="nav-item take-all-space-you-can li-selector">
+                        <a class="nav-link text-body" href="#nav-resume" id="nav-resume-tab" data-toggle="tab" role="tab" aria-controls="nav-resume" aria-selected="false">RESUME</a>     
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-    
-    <main class="container-fluid">
-        <span class="anchor" id="title-page"></span>
-        <article class="row page background-home">
-                <section class="jumbotron jumbotron-fluid h-25 w-50 p-3 mx-auto my-auto border border-dark">
-                    <div class="d-flex justify-content-center">
-                        <h1>Kenneth Kopelson</h1>    
+    <main class="container-fluid tab-content" id="nav-tabContent">
+        <article class="row page background-home tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="col my-auto">
+                <section>
+                    <div class="row">
+                        <div class="col d-flex justify-content-center">
+                            <h1>Kenneth Kopelson</h1>    
+                        </div>
                     </div>
-                    <div class="d-flex justify-content-center">
-                        <p>A front-end software developer.</p> 
-                    </div> 
-                </section>  
+                    <div class="row">
+                        <div class="col d-flex justify-content-center">
+                            <p>A front-end software developer.</p> 
+                        </div>     
+                    </div>
+                </section> 
+            </div> 
         </article> 
-        <span class="anchor" id="focus-page"></span>   
-        <article class="row page">
+        <article class="row page tab-pane fade show" id="nav-focus" role="tabpanel" aria-labelledby="nav-focus-tab">
             <section>
                 <img src="./assets/images/StockSnap1.jpg" alt="Stock photo of an office" class="blackShadows">      
             </section>
@@ -69,8 +77,7 @@
                 </p>
             </section>   
         </article>
-        <span class="anchor" id="project-page"></span>
-        <article class="row page background-gray">
+        <article class="row page background-gray tab-pane fade show" id="nav-portfolio" role="tabpanel" aria-labelledby="nav-portfolio-tab">
             <section>
                 <img src="./assets/images/StockSnap2.jpg" alt="Stock photo of JavaScript books" class="greyShadows">
             </section>
@@ -78,8 +85,8 @@
                 <h1>JavaScript applications:</h1>
             </section>    
         </article>
-        <span class="anchor" id="about-page"></span>
-        <article class="row page">
+        
+        <article class="row page tab-pane fade show" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
             <section>
                 <img src="./assets/images/fishPic.jpg" alt="A picture of me holding a fish" class="blackShadows">
             </section>
@@ -91,8 +98,8 @@
                 </p>
             </section>
         </article>
-        <span class="anchor" id="resume-page"></span>
-        <article class="row page background-gray">
+    
+        <article class="row page background-gray tab-pane fade show" id="nav-resume" role="tabpanel" aria-labelledby="nav-resume-tab">
             <section>
                 <img src="./assets/images/tree1.jpg" alt="Photo of a tree" class="greyShadows">
             </section>
@@ -102,40 +109,26 @@
             </section>
         </article>
     </main>
-    <footer>
-        <nav>
-            <a href="#header">HOME</a>
-            <a href="#projectpage">PORTFOLIO</a>
-            <a href="#aboutpage">ABOUT</a>
-            <a href="#resumepage">RESUME</a>
-        </nav>
-        <small>© 2020 Kenneth Kopelson. All rights reserved. Front-end web developer. </small>
-        <nav>
+    <footer class="fixed-bottom">
+        <nav class="navbar navbar-light bg-light">
+            <small>© 2020 Kenneth Kopelson. All rights reserved. Front-end web developer. </small>
+            <div class="d-flex">
             <a href="http://www.instagram.com/kenjamink" target="_blank">
-                <div>
-                    <img src="./assets/images/instagram.jpg">
-                </div>
+                <img src="./assets/images/instagram.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
             </a>
             <a href="http://www.facebook.com/kenj.kop" target="_blank">
-                <div>
-                    <img src="./assets/images/facebook.jpg">
-                </div>
+                <img src="./assets/images/facebook.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
             </a>
             <a href="http://www.linkedin.com/in/kennethkopelson" target="_blank">
-                <div>
-                    <img src="./assets/images/linkedin.jpg">
-                </div>
+                <img src="./assets/images/linkedin.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
             </a>
             <a href="http://www.youtube.com/channel/UCje8OyZsjFirdL_n3rIUbNQ/" target="_blank">
-                <div>
-                    <img src="./assets/images/youtube.jpg">
-                </div>
+                <img src="./assets/images/youtube.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
             </a>
             <a href="mailto:kennethkopelson@gmail.com" target="_blank">
-                <div>
-                    <img src="./assets/images/email.jpg">
-                </div>
+                <img src="./assets/images/email.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
             </a>
+            </div>
         </nav>
     </footer> 
 <!-- Bootstrap jQuery Script -->

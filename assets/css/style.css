@@ -1,7 +1,4 @@
 
-/* header {
-
-} */
 /* background styles */
 .background-home {
     background-image: url(../images/resumebackground.JPG);
@@ -14,20 +11,12 @@
     background-color: grey;
 }
 
+/* this styles each article height*/
 .page {
-    height: 100vh;
+    height: 90vh;
 }
 
-footer {
-    height: 50vh;
-}
-
-/* this fixes navbar anchor */
-
-span.anchor {
-    margin-top: -56px; /* height of nav, in this case 56px */
-    display: block;
-    height: 56px; /* height of nav, in this case 56px */
-    visibility: hidden;
-    position: relative;
+/* fixes tabs on small devices */
+.take-all-space-you-can{
+    width:100%;
 }
