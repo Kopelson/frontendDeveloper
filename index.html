@@ -14,21 +14,47 @@
     <link rel="icon" type="image/png" href="./assets/images/favicon.jpg">
 </head>
 <body>
-    <header> 
-        <nav>
-            <a href="#project-page">PORTFOLIO</a>
-            <a href="#about-page">ABOUT</a>
-            <a href="#title-page">HOME</a>
-            <a href="#focus-page">FOCUS</a>
-            <a href="#resume-page">RESUME</a>     
+    <header class="sticky-top"> 
+        <!-- Bootstrap Nav Component -->
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+                Kenneth Kopelson
+              </a>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link text-body" href="#project-page">PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-body" href="#about-page">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-body" href="#title-page">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-body" href="#focus-page">FOCUS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-body" href="#resume-page">RESUME</a>     
+                </li>
+            </ul>
         </nav>
     </header>
-    <main>
-        <article id="title-page">
-            <h1>Kenneth Kopelson</h1>
-            <p>A front-end software developer.</p>
-        </article>    
-        <article id="focus-page">
+    
+    <main class="container-fluid">
+        <span class="anchor" id="title-page"></span>
+        <article class="row page background-home">
+                <section class="jumbotron jumbotron-fluid h-25 w-50 p-3 mx-auto my-auto border border-dark">
+                    <div class="d-flex justify-content-center">
+                        <h1>Kenneth Kopelson</h1>    
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <p>A front-end software developer.</p> 
+                    </div> 
+                </section>  
+        </article> 
+        <span class="anchor" id="focus-page"></span>   
+        <article class="row page">
             <section>
                 <img src="./assets/images/StockSnap1.jpg" alt="Stock photo of an office" class="blackShadows">      
             </section>
@@ -43,7 +69,8 @@
                 </p>
             </section>   
         </article>
-        <article id="project-page">
+        <span class="anchor" id="project-page"></span>
+        <article class="row page background-gray">
             <section>
                 <img src="./assets/images/StockSnap2.jpg" alt="Stock photo of JavaScript books" class="greyShadows">
             </section>
@@ -51,7 +78,8 @@
                 <h1>JavaScript applications:</h1>
             </section>    
         </article>
-        <article id="about">
+        <span class="anchor" id="about-page"></span>
+        <article class="row page">
             <section>
                 <img src="./assets/images/fishPic.jpg" alt="A picture of me holding a fish" class="blackShadows">
             </section>
@@ -63,7 +91,8 @@
                 </p>
             </section>
         </article>
-        <article>
+        <span class="anchor" id="resume-page"></span>
+        <article class="row page background-gray">
             <section>
                 <img src="./assets/images/tree1.jpg" alt="Photo of a tree" class="greyShadows">
             </section>

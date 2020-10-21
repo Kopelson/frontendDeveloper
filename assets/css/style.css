@@ -1,0 +1,33 @@
+
+/* header {
+
+} */
+/* background styles */
+.background-home {
+    background-image: url(../images/resumebackground.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+
+.background-gray {
+    background-color: grey;
+}
+
+.page {
+    height: 100vh;
+}
+
+footer {
+    height: 50vh;
+}
+
+/* this fixes navbar anchor */
+
+span.anchor {
+    margin-top: -56px; /* height of nav, in this case 56px */
+    display: block;
+    height: 56px; /* height of nav, in this case 56px */
+    visibility: hidden;
+    position: relative;
+}
