@@ -92,7 +92,7 @@ ol li:before {
 }
 /* footer */
 footer {
-    font-size: xx-small;
+    font-size: small;
 }
 /* fixes tabs on small devices */
 @media only screen and (max-width: 992px){
