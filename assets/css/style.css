@@ -100,6 +100,6 @@ footer {
 /* fixes carousel on large devices */
 @media only screen and (min-width: 992px){
     .fix-large-carousel{
-        width:75%;
+        width:50%;
     }
     }
