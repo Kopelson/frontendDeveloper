@@ -17,7 +17,11 @@
 
 /* this styles each article height*/
 .page {
-    height: 150vh;
+    height: auto;
+}
+
+.home-page {
+    height: 90vh;
 }
 /* add custom li symbol */
 ol {
