@@ -18,8 +18,7 @@
         <!-- Bootstrap Nav Component -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">
-                <img src="./assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-                Kenneth Kopelson
+                <img src="./assets/images/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
               </a>
               <button class="navbar-toggler pt-1 pb-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="header-button">
                 <span class="navbar-toggler-icon"></span>
@@ -74,73 +73,75 @@
                 </section> 
         </article>
         <article class="row page tab-pane fade show mx-auto mb-5" id="nav-portfolio" role="tabpanel" aria-labelledby="nav-portfolio-tab">
-            <h2>Portfolio</h2>
-            <!-- Bootstrap carousel component -->
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <ul class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                  </ul>
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-interval="8000">
-                    <img src="./assets/images/groupProject.jpg" class="d-block w-100 " alt="gif your mood project">
-                  </div>
-                  <div class="carousel-item" data-interval="8000">
-                    <img src="./assets/images/weatherApp.png" class="d-block w-100" alt="weather app project">
-                  </div>
-                  <div class="carousel-item" data-interval="8000">
-                    <img src="./assets/images/passwordGenerator.png" class="d-block w-100" alt="password generator project">
-                  </div>
+            <div class="col-12 text-center">
+                <h2>Portfolio</h2>
+                <!-- Bootstrap carousel component -->
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="8000">
+                        <img src="./assets/images/groupProject.jpg" class="d-block w-100 " alt="gif your mood project">
+                    </div>
+                    <div class="carousel-item" data-interval="8000">
+                        <img src="./assets/images/weatherApp.png" class="d-block w-100" alt="weather app project">
+                    </div>
+                    <div class="carousel-item" data-interval="8000">
+                        <img src="./assets/images/passwordGenerator.png" class="d-block w-100" alt="password generator project">
+                    </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
             </div>
             <div class="row">
+                <!-- Bootstrap Card -->
                 <div class="col-md-4 card">
                     <div class="card-body">
                         <h5 class="card-title">Gif Your Mood</h5>
                         <p class="card-text">This is a purely fun application that tries to find a gif that matches the user's current mood.</p>
                         <div class="d-flex justify-content-around">
-                            <a href="https://github.com/Kopelson/gifYourMood" class="btn btn-dark">Github Repository</a>
-                            <a href="https://kopelson.github.io/gifYourMood/" class="btn btn-dark">Deployed Project</a>
+                            <a href="https://github.com/Kopelson/gifYourMood" target="_blank" class="btn btn-dark">Github Repository</a>
+                            <a href="https://kopelson.github.io/gifYourMood/" target="_blank" class="btn btn-dark">Deployed Project</a>
                         </div>
                     </div>
                 </div>
+                <!-- Bootstrap Card -->
                 <div class="col-md-4 card">
                     <div class="card-body">
                         <h5 class="card-title">Ajax Weather App</h5>
                         <p class="card-text">This weather app focuses on using API's to retrieve weather data for cities across the United States.</p>
                         <div class="d-flex justify-content-around">
-                            <a href="https://github.com/Kopelson/ajaxWeatherApp" class="btn btn-dark">Github Repository</a>
-                            <a href="https://kopelson.github.io/ajaxWeatherApp/" class="btn btn-dark">Deployed Project</a>
+                            <a href="https://github.com/Kopelson/ajaxWeatherApp" target="_blank" class="btn btn-dark">Github Repository</a>
+                            <a href="https://kopelson.github.io/ajaxWeatherApp/" target="_blank" class="btn btn-dark">Deployed Project</a>
                         </div>
                     </div>
                 </div>
+                <!-- Bootstrap Card -->
                 <div class="col-md-4 card">
                     <div class="card-body">
                         <h5 class="card-title">JavaScript Password Generator</h5>
                         <p class="card-text">This application generates a random password based on user-selected criteria.</p>
                         <div class="d-flex justify-content-around">
-                            <a href="https://github.com/Kopelson/javascriptPasswordGenerator" class="btn btn-dark">Github Repository</a>
-                            <a href="https://kopelson.github.io/javascriptPasswordGenerator/" class="btn btn-dark">Deployed Project</a>
+                            <a href="https://github.com/Kopelson/javascriptPasswordGenerator" target="_blank" class="btn btn-dark">Github Repository</a>
+                            <a href="https://kopelson.github.io/javascriptPasswordGenerator/" target="_blank" class="btn btn-dark">Deployed Project</a>
                         </div>
                     </div>
                 </div>
             </div>
         </article>
-        
         <article class="row page tab-pane fade show" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
-            <section>
-                <img src="./assets/images/fishPic.jpg" alt="A picture of me holding a fish" class="blackShadows">
-            </section>
-            <section>
+            <section class="col-lg-6 mx-auto">
+                <img src="./assets/images/me.png" alt="A picture of Ken Kopelson" class="blackShadows image-resize">
                 <h1>About Me:</h1>
                 <p>
                     I love adventures. I like hiking. I love to game. I enjoy spending time with friends and family. I have a beautiful wife and daughter.
@@ -149,13 +150,11 @@
             </section>
         </article>
     
-        <article class="row page background-gray tab-pane fade show" id="nav-resume" role="tabpanel" aria-labelledby="nav-resume-tab">
-            <section>
-                <img src="./assets/images/tree1.jpg" alt="Photo of a tree" class="greyShadows">
-            </section>
-            <section>
+        <article class="row page tab-pane fade show" id="nav-resume" role="tabpanel" aria-labelledby="nav-resume-tab">
+            <section class="col-lg-4 mx-auto text-center">
+                <img src="./assets/images/tree1.jpg" alt="Photo of a tree" class="image-resize blackShadows">
                 <h1>Dig a little deeper.</h1>
-                <a href="" alt="PDF of Resume">Resume</a>
+                <a href="./assets/pdf/KennethKopelson_Resume.pdf" alt="PDF of Resume" target="_blank" class="btn btn-dark">Resume</a>
             </section>
         </article>
     </main>
