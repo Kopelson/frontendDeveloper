@@ -70,3 +70,6 @@ Thank you Bootstrap for a fantastic CSS Framework. Check out more @ https://getb
 
 ## License
 Feel free to use any part of my code but please do not reuse any of my personal information and/or pictures without direct consent from me. Do not try to contact me for any reason other than business opportunities.
+
+## Badges
+<a href="https://img.shields.io/badge/HTML-79.3%25-red"><img alt="HTML usage" src="https://img.shields.io/badge/HTML-79.3%25-red"></a> <a href="https://img.shields.io/badge/CSS-17.6%25-purple"><img alt="CSS usage" src="https://img.shields.io/badge/CSS-17.6%25-purple"></a> <a href="https://img.shields.io/badge/JavaScript-3.1%25-yellow"><img alt="Javascript usage" src="https://img.shields.io/badge/JavaScript-3.1%25-yellow"></a> <a href="https://img.shields.io/badge/Frameworks-Bootstrap-blue"><img alt="Bootstrap framework" src="https://img.shields.io/badge/Frameworks-Bootstrap-blue"></a> <a href="https://img.shields.io/badge/Frameworks-jQuery-blue"><img alt="jQuery framework" src="https://img.shields.io/badge/Frameworks-jQuery-blue"></a>
