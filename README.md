@@ -11,23 +11,23 @@ Kenneth Kopelson</p>
 
 ![main](https://user-images.githubusercontent.com/57735283/97096187-44427200-161d-11eb-96ab-dca26a3b79a1.JPG)
 
-### Home
+### Home & Focus Page
 
 ![home](https://user-images.githubusercontent.com/57735283/97096190-486e8f80-161d-11eb-89b7-a160f1a6a95f.gif)
 
-### Focus
+### Portfolio
 
 ![portfolio](https://user-images.githubusercontent.com/57735283/97096193-4c9aad00-161d-11eb-9985-89be34e4eefa.gif)
 
-### Portfolio
+### About
 
 ![about](https://user-images.githubusercontent.com/57735283/97096192-4b698000-161d-11eb-8a0b-f750b2fe684d.gif)
 
-### About
+### Resume
 
 ![resume](https://user-images.githubusercontent.com/57735283/97096199-545a5180-161d-11eb-9a91-eb7c132ef55f.gif)
 
-### Resume
+### Mobile First Design
 
 ![responsive](https://user-images.githubusercontent.com/57735283/97096194-4efd0700-161d-11eb-92aa-17cc26acd1a7.gif)
 
