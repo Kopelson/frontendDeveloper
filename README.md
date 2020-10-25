@@ -9,18 +9,35 @@ Kenneth Kopelson</p>
 ## Overview
  * Project link: https://kopelson.github.io/frontendDeveloper/
 
+![main](https://user-images.githubusercontent.com/57735283/97096187-44427200-161d-11eb-96ab-dca26a3b79a1.JPG)
+
 ### Home
+
+![home](https://user-images.githubusercontent.com/57735283/97096190-486e8f80-161d-11eb-89b7-a160f1a6a95f.gif)
 
 ### Focus
 
+![portfolio](https://user-images.githubusercontent.com/57735283/97096193-4c9aad00-161d-11eb-9985-89be34e4eefa.gif)
+
 ### Portfolio
+
+![about](https://user-images.githubusercontent.com/57735283/97096192-4b698000-161d-11eb-8a0b-f750b2fe684d.gif)
 
 ### About
 
+![resume](https://user-images.githubusercontent.com/57735283/97096199-545a5180-161d-11eb-9a91-eb7c132ef55f.gif)
+
 ### Resume
+
+![responsive](https://user-images.githubusercontent.com/57735283/97096194-4efd0700-161d-11eb-92aa-17cc26acd1a7.gif)
 
 ### Responsive Bootstrap grid system
 
+![responsivePortfolio](https://user-images.githubusercontent.com/57735283/97096195-502e3400-161d-11eb-979b-d56229290860.gif)
+
+### Bootstrap Tabs
+
+![tabs](https://user-images.githubusercontent.com/57735283/97096197-52908e00-161d-11eb-8bde-2a1b545e5731.gif)
 
 ## Self imposed rules
 * Develop a portfolio with the following items using Bootstrap:
@@ -44,7 +61,10 @@ Kenneth Kopelson</p>
   2. nav
   3. form
   4. btn
-     *adds button style
+  5. carousel
+  6. tabs
+  7. card
+  
 ### Utilities
   1. text
      * Used to change text style.
