@@ -97,86 +97,151 @@
         </article>
         <!-- Third article tab "portfolio" -->
         <article class="row page tab-pane fade show mx-auto mb-5" id="nav-portfolio" role="tabpanel" aria-labelledby="nav-portfolio-tab">
-            <div class="col-12 text-center">
-                <h2>Portfolio</h2>
-                <!-- Bootstrap carousel component -->
-                <div id="myCarousel" class="carousel slide fix-large-carousel mx-auto" data-ride="carousel">
-                    <ul class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                    </ul>
-                    <div class="carousel-inner">
-                    <div class="carousel-item active" data-interval="8000">
-                        <img src="./assets/images/groupProject.jpg" class="d-block w-100 " alt="gif your mood project">
-                    </div>
-                    <div class="carousel-item" data-interval="8000">
-                        <img src="./assets/images/weatherApp.png" class="d-block w-100" alt="weather app project">
-                    </div>
-                    <div class="carousel-item" data-interval="8000">
-                        <img src="./assets/images/passwordGenerator.png" class="d-block w-100" alt="password generator project">
-                    </div>
-                    <div class="carousel-item" data-interval="8000">
-                        <img src="./assets/images/eat-a-burger.png" class="d-block w-100" alt="MVC Handlebar burger joint project">
-                    </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <!-- Bootstrap Card -->
-                <div class="col-md-6 card">
-                    <div class="card-body">
-                        <h5 class="card-title">Gif Your Mood</h5>
-                        <p class="card-text">This is a purely fun application that tries to find a gif that matches the user's current mood.</p>
-                        <div class="d-flex justify-content-around">
-                            <a href="https://github.com/Kopelson/gifYourMood" target="_blank" class="btn btn-dark">Github Repository</a>
-                            <a href="https://kopelson.github.io/gifYourMood/" target="_blank" class="btn btn-dark">Deployed Project</a>
+            <h2>Portfolio</h2>
+                <section>
+                    <h3>Collaborations</h2>
+                    <div class="row">
+                        <!-- Bootstrap Card -->
+                        <div class="col-lg-6 card">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Gif Your Mood</h5>
+                                <p class="card-text">This is a purely fun application that tries to find a gif that matches the user's current mood.</p>
+                                <img src="/assets/images/groupProject.jpg" class="card-img" alt="Gif Your Mood application">
+                                    <a href="https://github.com/Kopelson/gifYourMood" target="_blank" class="btn btn-dark">Github Repository</a>
+                                    <a href="https://kopelson.github.io/gifYourMood/" target="_blank" class="btn btn-dark">Deployed Project</a>
+                                
+                            </div>
+                        </div>
+                        <!-- Bootstrap Card -->
+                        <div class="col-lg-6 card">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Bear Share</h5>
+                                <p class="card-text">A plushie buy and sell listing platform for build-a-bear enthusiasts.</p>
+                                    <img src="/assets/images/bearshare.png" class="card-img" alt="Bear Share application">
+                                    <a href="https://github.com/jre23/bear-share" target="_blank" class="btn btn-dark">Github Repository</a>
+                                    <a href="https://nameless-plains-06669.herokuapp.com/" target="_blank" class="btn btn-dark">Deployed Project</a>
+                                
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- Bootstrap Card -->
-                <div class="col-md-6 card">
-                    <div class="card-body">
-                        <h5 class="card-title">Ajax Weather App</h5>
-                        <p class="card-text">This weather app focuses on using API's to retrieve weather data for cities across the United States.</p>
-                        <div class="d-flex justify-content-around">
-                            <a href="https://github.com/Kopelson/ajaxWeatherApp" target="_blank" class="btn btn-dark">Github Repository</a>
-                            <a href="https://kopelson.github.io/ajaxWeatherApp/" target="_blank" class="btn btn-dark">Deployed Project</a>
+                </section>
+                <section>
+                    <h3>Front-end</h3>
+                    <!-- Bootstrap Card -->
+                    <div class="col-lg-6 card">
+                        <div class="card-body">
+                            <h5 class="card-title">Ajax Weather App</h5>
+                            <p class="card-text">This weather app focuses on using API's to retrieve weather data for cities across the United States.</p>
+                            
+                                <a href="https://github.com/Kopelson/ajaxWeatherApp" target="_blank" class="btn btn-dark">Github Repository</a>
+                                <a href="https://kopelson.github.io/ajaxWeatherApp/" target="_blank" class="btn btn-dark">Deployed Project</a>
+                            
                         </div>
                     </div>
-                </div>
-                <!-- Bootstrap Card -->
-                <div class="col-md-6 card">
-                    <div class="card-body">
-                        <h5 class="card-title">JavaScript Password Generator</h5>
-                        <p class="card-text">This application generates a random password based on user-selected criteria.</p>
-                        <div class="d-flex justify-content-around">
-                            <a href="https://github.com/Kopelson/javascriptPasswordGenerator" target="_blank" class="btn btn-dark">Github Repository</a>
-                            <a href="https://kopelson.github.io/javascriptPasswordGenerator/" target="_blank" class="btn btn-dark">Deployed Project</a>
+                    <!-- Bootstrap Card -->
+                    <div class="col-lg-6 card">
+                        <div class="card-body">
+                            <h5 class="card-title">JavaScript Password Generator</h5>
+                            <p class="card-text">This application generates a random password based on user-selected criteria.</p>
+                            
+                                <a href="https://github.com/Kopelson/javascriptPasswordGenerator" target="_blank" class="btn btn-dark">Github Repository</a>
+                                <a href="https://kopelson.github.io/javascriptPasswordGenerator/" target="_blank" class="btn btn-dark">Deployed Project</a>
+                            
                         </div>
                     </div>
-                </div>
-                <!-- Bootstrap Card -->
-                <div class="col-md-6 card">
-                    <div class="card-body">
-                        <h5 class="card-title">MVC Handlebar Burger Joint</h5>
-                        <p class="card-text">This app is a burger logger that uses MySQL, Node, Express, Handlebars and a homemade ORM.</p>
-                        <div class="d-flex justify-content-around">
-                            <a href="https://github.com/Kopelson/MVC_Handlebar_Burger_Joint" target="_blank" class="btn btn-dark">Github Repository</a>
-                            <a href="https://rocky-sierra-82131.herokuapp.com/" target="_blank" class="btn btn-dark">Deployed Project</a>
+                    <!-- Bootstrap Card -->
+                    <div class="col-lg-6 card">
+                        <div class="card-body">
+                            <h5 class="card-title">Moment.js Daily Scheduler</h5>
+                            <p class="card-text">This app features a dynamically updated HTML and CSS powered by JQuery and uses Moment.js library to work with date and time within the application.</p>
+                            
+                                <a href="https://github.com/Kopelson/momentJSDailyScheduler" target="_blank" class="btn btn-dark">Github Repository</a>
+                                <a href="https://kopelson.github.io/momentJSDailyScheduler/" target="_blank" class="btn btn-dark">Deployed Project</a>
+                            
                         </div>
                     </div>
-                </div>
-            </div>
+                    <!-- Bootstrap Card -->
+                    <div class="col-lg-6 card">
+                        <div class="card-body">
+                            <h5 class="card-title">API Code Quiz Challenge</h5>
+                            <p class="card-text">This app is a lightweight timed coding quiz with multiple-choice questions. By using DOM manipulation, JavaScript, Bootstrap, and the web browsers API local storage this app can challenge users to their knowledge of JavaScript.</p>
+                            
+                                <a href="https://github.com/Kopelson/APICodeQuizChallenge" target="_blank" class="btn btn-dark">Github Repository</a>
+                                <a href="https://kopelson.github.io/APICodeQuizChallenge/" target="_blank" class="btn btn-dark">Deployed Project</a>
+                            
+                        </div>
+                    </div>
+                    <!-- Bootstrap Card -->
+                    <div class="col-lg-6 card">
+                        <div class="card-body">
+                            <h5 class="card-title">Horiseon - The Search Engine Optimization Project</h5>
+                            <p class="card-text">Horiseon is an artificial marketing agency that wants their code base to follow accessibility standards so that their own site is optimized for search engines.</p>
+                            
+                                <a href="https://github.com/Kopelson/Horiseon" target="_blank" class="btn btn-dark">Github Repository</a>
+                                <a href="https://kopelson.github.io/Horiseon/" target="_blank" class="btn btn-dark">Deployed Project</a>
+                            
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3>Back-end</h3>
+                    <!-- Bootstrap Card -->
+                    <div class="col-lg-6 card">
+                        <div class="card-body">
+                            <h5 class="card-title">MVC Handlebar Burger Joint</h5>
+                            <p class="card-text">This app is a burger logger that uses MySQL, Node, Express, Handlebars and a homemade ORM.</p>
+                            
+                                <a href="https://github.com/Kopelson/MVC_Handlebar_Burger_Joint" target="_blank" class="btn btn-dark">Github Repository</a>
+                                <a href="https://rocky-sierra-82131.herokuapp.com/" target="_blank" class="btn btn-dark">Deployed Project</a>
+                            
+                        </div>
+                    </div>
+                    <!-- Bootstrap Card -->
+                    <div class="col-lg-6 card">
+                        <div class="card-body">
+                            <h5 class="card-title">HTML-Template-Engine</h5>
+                            <p class="card-text">Built a Node CLI that takes in information about employees and generates an HTML webpage that displays summaries for each person.</p>
+                            
+                                <a href="https://github.com/Kopelson/HTML-Template-Engine" target="_blank" class="btn btn-dark">Github Repository</a>
+                            
+                        </div>
+                    </div>
+                    <!-- Bootstrap Card -->
+                    <div class="col-lg-6 card">
+                        <div class="card-body">
+                            <h5 class="card-title">Employee Tracker CMS</h5>
+                            <p class="card-text">This project involved architecting and building a solution for managing a company's employees using node, inquirer, and MySQL.</p>
+                            
+                                <a href="https://github.com/Kopelson/employeeTrackerCMS" target="_blank" class="btn btn-dark">Github Repository</a>
+                                <a href="https://www.youtube.com/watch?v=I9s21EbcL1Y" target="_blank" class="btn btn-dark">Demonstration</a>
+                            
+                        </div>
+                    </div>
+                    <!-- Bootstrap Card -->
+                    <div class="col-lg-6 card">
+                        <div class="card-body">
+                            <h5 class="card-title">Note Taker Express</h5>
+                            <p class="card-text">This application uses an Express backend to write, save, and delete notes.</p>
+                            
+                                <a href="https://github.com/Kopelson/noteTakerExpress" target="_blank" class="btn btn-dark">Github Repository</a>
+                                <a href="https://sleepy-ocean-58474.herokuapp.com/" target="_blank" class="btn btn-dark">Deployed Project</a>
+                            
+                        </div>
+                    </div>
+                    <!-- Bootstrap Card -->
+                    <div class="col-lg-6 card">
+                        <div class="card-body">
+                            <h5 class="card-title">Node README Generator</h5>
+                            <p class="card-text">This is a terminal based application to produce professional looking README md files.</p>
+                            
+                                <a href="https://github.com/Kopelson/nodeREADMEGenerator" target="_blank" class="btn btn-dark">Github Repository</a>
+                                <a href="https://www.youtube.com/watch?v=24iaJGACyec" target="_blank" class="btn btn-dark">Demonstration</a>
+                            
+                        </div>
+                    </div>
+                </section>
         </article>
         <!-- Fourth article tab "about" -->
         <article class="row page tab-pane fade show" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
