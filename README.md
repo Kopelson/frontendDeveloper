@@ -1,12 +1,9 @@
-# frontend Developer Portfolio
-## Description
- <p>Welcome to my fontend developer portfolio! I designed a responsive website to show off the different projects I have been working on. I used Bootstrap CSS Framework to create a mobile responsive portfolio. Feel free to take a look at how I applied Bootstrap classes and components to my website.
+# frontend Developer Portfolio : 
 
-Thanks!
-
-Kenneth Kopelson</p>
+Welcome to my fontend developer portfolio! I designed a responsive website to show off the different projects I have been working on. I used Bootstrap CSS Framework to create a mobile responsive portfolio. Feel free to take a look at how I applied Bootstrap classes and components to my website.
 
 ## Overview
+
  * Project link: https://kopelson.github.io/frontendDeveloper/
 
 ![main](https://user-images.githubusercontent.com/57735283/97096187-44427200-161d-11eb-96ab-dca26a3b79a1.JPG)
