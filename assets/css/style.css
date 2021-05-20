@@ -35,7 +35,7 @@ ol li {
   }
   
 ol li:before {
-    content: "+";
+    content: "🌟";
     padding-right: 5px;
   }
 /* resize image */
@@ -63,4 +63,12 @@ footer {
     .fix-large-carousel{
         width:50%;
     }
-    }
+}
+
+.card{
+    margin: 15px;
+}
+
+.project-style {
+    text-align: center;
+}
