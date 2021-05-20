@@ -43,6 +43,11 @@ ol li:before {
     width: 75%;
     height: auto;
 }
+
+.tree-resize{
+    width: 50%;
+    height: auto;
+}
 /* adds a shadow to images */
 .blackShadows {
     box-shadow: 10px 10px 5px black;
