@@ -16,11 +16,11 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./assets/images/favicon.jpg">
 </head>
-<body>
+<body class="container-fluid">
     <!-- Header -->
-    <header class="sticky-top"> 
+    <header class=""> 
         <!-- Bootstrap Nav Component -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="row navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="./index.html">
                 <img src="./assets/images/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
               </a>
@@ -32,7 +32,7 @@
                 <ul class="nav nav-tabs take-all-space-you-can" id="nav-tab" role="tablist">
                     <li class="nav-item take-all-space-you-can li-selector">
                         <!-- Link to first article tab -->
-                        <a class="nav-link active text-body" href="#nav-home" id="nav-home-tab" data-toggle="tab" role="tab" aria-controls="nav-home" aria-selected="true">HOME</a>
+                        <a class="nav-link text-body" href="#nav-home" id="nav-home-tab" data-toggle="tab" role="tab" aria-controls="nav-home" aria-selected="false">HOME</a>
                     </li>
                     <li class="nav-item take-all-space-you-can li-selector">
                         <!-- Link to second article tab -->
@@ -55,9 +55,9 @@
         </nav>
     </header>
     <!-- Main -->
-    <main class="container-fluid tab-content" id="nav-tabContent">
+    <main class="row tab-content" id="nav-tabContent">
         <!-- First article tab "home"-->
-        <article class="row home-page background-home pt-5 tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        <article class="col background-home tab-pane fade active in show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 <section class="col-lg-6 p-5 mx-auto border border-dark background-home-text">
                     <div class="row">
                         <div class="col d-flex justify-content-center">
@@ -82,7 +82,7 @@
                 </section> 
         </article> 
         <!-- Second article tab "focus" -->
-        <article class="row page tab-pane p-3 fade show" id="nav-focus" role="tabpanel" aria-labelledby="nav-focus-tab">
+        <article class="tab-pane fade active in show" id="nav-focus" role="tabpanel" aria-labelledby="nav-focus-tab">
                 <section class="col-lg-6 mx-auto">
                     <h2>My passion and focus is web development.</h2>
                     <p>I have the skills needed to be your full stack web developer.</p>
@@ -96,14 +96,14 @@
                 </section> 
         </article>
         <!-- Third article tab "portfolio" -->
-        <article class="row page tab-pane fade show mx-auto mb-5" id="nav-portfolio" role="tabpanel" aria-labelledby="nav-portfolio-tab">
+        <article class="tab-pane fade active in  show" id="nav-portfolio" role="tabpanel" aria-labelledby="nav-portfolio-tab">
             <div class="col-lg-6 mx-auto text-center">
                 <h2>Portfolio</h2>
-                <p>Choose a type of project you would like to explore.</p> 
-                <!-- Bootstrap Tab Component -->
+                <!-- <p>Choose a type of project you would like to explore.</p> 
+                
                 <ul class="nav justify-content-between mb-3">
                     <li>
-                        <a class='btn btn-dark active' data-toggle='tab' href='#front_end'>Front-end</a>
+                        <a class='btn btn-dark' data-toggle='tab' href='#front_end'>Front-end</a>
                     </li>
                     <li> 
                         <a class='btn btn-dark ' data-toggle='tab' href='#back_end'>Back-end</a>
@@ -111,15 +111,15 @@
                     <li>
                         <a class='btn btn-dark ' data-toggle='tab' href='#collaboration'>Collaboration</a>
                     </li>
-                </ul>
+                </ul> -->
             </div>
                 
-            <div class="tab-content project-style mx-auto">
+            <!-- <div class="tab-content project-style mx-auto">
                 <div id='collaboration' class='tab-pane fade'>
                     <section class="mx-auto">
                         <h3>Collaboration Projects</h3>
                         <div class="row justify-content-around">
-                            <!-- Bootstrap Card -->
+                            
                             <div class="col-lg-3 card">
                                 
                                 <div class="card-body">
@@ -130,7 +130,7 @@
                                     <a href="https://kopelson.github.io/gifYourMood/" target="_blank" class="btn btn-dark d-flex align-items-end">Deployed Project</a>
                                 </div>
                             </div>
-                            <!-- Bootstrap Card -->
+                            
                             <div class="col-lg-3 card">
                                 
                                 <div class="card-body">
@@ -145,11 +145,11 @@
                         </div>
                     </section>
                 </div>
-                <div id='front_end' class='tab-pane fade in active show'>
+                <div id='front_end' class='tab-pane fade in'>
                     <section class="mx-auto">
                         <h3>Front-end Projects</h3>
                         <div class="row justify-content-around">
-                            <!-- Bootstrap Card -->
+                            
                             <div class="col-lg-3 card">
                                 <div class="card-body">
                                     <h5 class="card-title">Ajax Weather App</h5>
@@ -159,7 +159,7 @@
                                     <a href="https://kopelson.github.io/ajaxWeatherApp/" target="_blank" class="btn btn-dark d-flex align-items-end">Deployed Project</a>
                                 </div>
                             </div>
-                            <!-- Bootstrap Card -->
+                            
                             <div class="col-lg-3 card">
                                 <div class="card-body">
                                     <h5 class="card-title">JavaScript Password Generator</h5>
@@ -169,7 +169,7 @@
                                     <a href="https://kopelson.github.io/javascriptPasswordGenerator/" target="_blank" class="btn btn-dark d-flex align-items-end">Deployed Project</a>
                                 </div>
                             </div>
-                            <!-- Bootstrap Card -->
+                            
                             <div class="col-lg-3 card">
                                 <div class="card-body">
                                     <h5 class="card-title">Moment.js Daily Scheduler</h5>
@@ -179,7 +179,7 @@
                                     <a href="https://kopelson.github.io/momentJSDailyScheduler/" target="_blank" class="btn btn-dark d-flex align-items-end">Deployed Project</a>
                                 </div>
                             </div>
-                            <!-- Bootstrap Card -->
+                            
                             <div class="col-lg-3 card">
                                 <div class="card-body">
                                     <h5 class="card-title">API Code Quiz Challenge</h5>
@@ -189,7 +189,7 @@
                                     <a href="https://kopelson.github.io/APICodeQuizChallenge/" target="_blank" class="btn btn-dark d-flex align-items-end">Deployed Project</a>
                                 </div>
                             </div>
-                            <!-- Bootstrap Card -->
+                            
                             <div class="col-lg-3 card">
                                 <div class="card-body">
                                     <h5 class="card-title">Horiseon - The Search Engine Optimization Project</h5>
@@ -206,7 +206,7 @@
                     <section class="mx-auto">
                         <h3>Back-end Projects</h3>
                         <div class="row justify-content-around">
-                            <!-- Bootstrap Card -->
+                            
                             <div class="col-lg-3 card">
                                 <div class="card-body">
                                     <h5 class="card-title">MVC Handlebar Burger Joint</h5>
@@ -216,7 +216,7 @@
                                     <a href="https://rocky-sierra-82131.herokuapp.com/" target="_blank" class="btn btn-dark d-flex align-items-end">Deployed Project</a>
                                 </div>
                             </div>
-                            <!-- Bootstrap Card -->
+                            
                             <div class="col-lg-3 card">
                                 <div class="card-body">
                                     <h5 class="card-title">HTML-Template-Engine</h5>
@@ -225,7 +225,7 @@
                                     <a href="https://github.com/Kopelson/HTML-Template-Engine" target="_blank" class="btn btn-dark d-flex align-items-end mb-3">Github Repository</a>
                                 </div>
                             </div>
-                            <!-- Bootstrap Card -->
+                            
                             <div class="col-lg-3 card">
                                 <div class="card-body">
                                     <h5 class="card-title">Employee Tracker CMS</h5>
@@ -235,7 +235,7 @@
                                     <a href="https://www.youtube.com/watch?v=I9s21EbcL1Y" target="_blank" class="btn btn-dark d-flex align-items-end">Demonstration</a>
                                 </div>
                             </div>
-                            <!-- Bootstrap Card -->
+                            
                             <div class="col-lg-3 card">
                                 <div class="card-body">
                                     <h5 class="card-title">Note Taker Express</h5>
@@ -245,7 +245,7 @@
                                     <a href="https://sleepy-ocean-58474.herokuapp.com/" target="_blank" class="btn btn-dark d-flex align-items-end">Deployed Project</a>
                                 </div>
                             </div>
-                            <!-- Bootstrap Card -->
+                            
                             <div class="col-lg-3 card">
                                 <div class="card-body">
                                     <h5 class="card-title">Node README Generator</h5>
@@ -258,10 +258,10 @@
                         </div>
                     </section>
                 </div>
-            </div>
+            </div> -->
         </article>
         <!-- Fourth article tab "about" -->
-        <article class="row page tab-pane fade show" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+        <article class="tab-pane fade active in  show" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
             <section>
                 <div class="d-flex row">
                 <div class="col-md-8 mt-3">
@@ -280,7 +280,7 @@
             </section>
         </article>
         <!-- Fifth article tab "resume" -->
-        <article class="row page tab-pane fade show" id="nav-resume" role="tabpanel" aria-labelledby="nav-resume-tab">
+        <article class="tab-pane fade active in show" id="nav-resume" role="tabpanel" aria-labelledby="nav-resume-tab">
             <section class="col-lg-8 mx-auto text-center mb-5">
                 <img src="./assets/images/tree1.jpg" alt="Photo of a tree" class="tree-resize blackShadows mt-3">
                 <h2 class="mt-5">Dig a little deeper.</h2>
@@ -289,10 +289,13 @@
         </article>
     </main>
     <!-- Footer -->
-    <footer class="fixed-bottom navbar navbar-light bg-light">
-                <!-- Copyright -->
-                <small>© 2021 Kenneth Kopelson.</small>  
-                <!-- link to instagram -->
+    <footer class="row fixed-bottom navbar navbar-light bg-light">
+        <div class="col-3">
+            <!-- Copyright -->
+            <small>© 2021 Kenneth Kopelson.</small>  
+            <!-- link to instagram -->
+        </div>
+        <div class="col-8 d-flex justify-content-around">
             <a href="http://www.instagram.com/kenjamink" target="_blank">
                 <img src="./assets/images/instagram.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
             </a>
@@ -312,6 +315,7 @@
             <a href="mailto:kennethkopelson@gmail.com" target="_blank">
                 <img src="./assets/images/email.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
             </a>
+        </div>
     </footer> 
 <!-- Bootstrap jQuery Script -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

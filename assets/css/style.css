@@ -1,4 +1,15 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
 /* background styles */
 /* By: Manuel Pinto https://manuelpinto.in */
 .background-home {
@@ -25,15 +36,7 @@
 
 .background-home-text {
     background-color: rgba(255, 255, 255, .5);
-}
-
-/* this styles each article height*/
-.page {
-    height: auto;
-}
-
-.home-page {
-    height: 90vh;
+    margin-top: 25vh;
 }
 /* add custom li symbol */
 ol {
@@ -47,7 +50,6 @@ ol li {
   }
   
 ol li:before {
-    content: "🌟";
     padding-right: 5px;
   }
 /* resize image */
@@ -88,4 +90,20 @@ footer {
 
 .project-style {
     text-align: center;
+}
+
+article {
+    background-color: #e73c7e;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+main {
+    scroll-snap-type: y proximity;
+    overflow-y: scroll;
+    height: 100vh;
 }
