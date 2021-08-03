@@ -20,7 +20,7 @@
     <!-- Header -->
     <header class=""> 
         <!-- Bootstrap Nav Component -->
-        <nav class="row navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="row fixed-top navbar navbar-light bg-light">
             <a class="navbar-brand" href="./index.html">
                 <img src="./assets/images/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
               </a>
@@ -32,22 +32,18 @@
                 <ul class="nav nav-tabs take-all-space-you-can" id="nav-tab" role="tablist">
                     <li class="nav-item take-all-space-you-can li-selector">
                         <!-- Link to first article tab -->
-                        <a class="nav-link text-body" href="#nav-home" id="nav-home-tab" data-toggle="tab" role="tab" aria-controls="nav-home" aria-selected="false">HOME</a>
+                        <a class="nav-link text-body active" href="#nav-home" id="nav-home-tab" data-toggle="tab" role="tab" aria-controls="nav-home" aria-selected="true">HOME</a>
                     </li>
                     <li class="nav-item take-all-space-you-can li-selector">
                         <!-- Link to second article tab -->
-                        <a class="nav-link text-body" href="#nav-focus" id="nav-focus-tab" data-toggle="tab" role="tab" aria-controls="nav-focus" aria-selected="false">FOCUS</a>
-                    </li>
-                    <li class="nav-item take-all-space-you-can li-selector">
-                        <!-- Link to third article tab -->
                         <a class="nav-link text-body" href="#nav-portfolio" id="nav-portfolio-tab" data-toggle="tab" role="tab" aria-controls="nav-portfolio" aria-selected="false">PORTFOLIO</a>
                     </li>
                     <li class="nav-item take-all-space-you-can li-selector">
-                        <!-- Link to forth article tab -->
+                        <!-- Link to third article tab -->
                         <a class="nav-link text-body" href="#nav-about" id="nav-about-tab" data-toggle="tab" role="tab" aria-controls="nav-about" aria-selected="false">ABOUT</a>
                     </li>
                     <li class="nav-item take-all-space-you-can li-selector">
-                        <!-- Link to fifth article tab -->
+                        <!-- Link to fourth article tab -->
                         <a class="nav-link text-body" href="#nav-resume" id="nav-resume-tab" data-toggle="tab" role="tab" aria-controls="nav-resume" aria-selected="false">RESUME</a>     
                     </li>
                 </ul>
@@ -56,9 +52,9 @@
     </header>
     <!-- Main -->
     <main class="row tab-content" id="nav-tabContent">
-        <!-- First article tab "home"-->
+        <!-- Home -->
         <article class="col background-home tab-pane fade active in show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-            <section class="col-lg-6 p-5 mx-auto border border-dark background-home-text">
+            <section class="col-md-6 p-5 mx-auto border border-dark background-home-text">
                 <div class="row">
                     <div class="col d-flex justify-content-center">
                         <h1>Kenneth Kopelson</h1>    
@@ -71,7 +67,181 @@
                 </div>
             </section>
             <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-light mt-5">Learn More</button> 
+                <a class="learn-more btn btn-light mt-5">Learn More</a>
+            </div>
+        </article>
+        <!-- About -->
+        <article class="col tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="row mt-5">
+                <aside class="col-sm-3 mt-2">
+                    <img src="assets/images/me.jpeg" id="me-pic">
+                </aside>
+                <section class="col-sm-9">
+                    <h1>Learn More</h1> 
+                    <div id="accordion">
+                        <div class="card">
+                          <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link text-body collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Work Experience
+                              </button>
+                            </h5>
+                          </div>
+                      
+                          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <h3>Freelance</h3>
+                                <ul>
+                                    <li>
+                                        MK Designs
+                                    </li>
+                                    <li>
+                                        Build it with Greg
+                                    </li>
+                                </ul>
+                                    
+                                <h3>Operations Technician II</h3>
+                                <p>Worked with Microsoft's Power App technology to build a mobile application that increased productivity by 50%</p>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link text-body collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Projects
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                <h3>The Smoking Gun - A bullet journal application</h3>
+                                <ul>
+                                    <li>
+                                        Collaborated with 4 developers and created a full stack application in 3 weeks
+                                    </li>
+                                    <li>
+                                        Backend developer - created a RESTful API using Node and Mongoose
+                                    </li>
+                                    <li>
+                                        Worked with React Hooks to create a classless react app 
+                                    </li>
+                                    <li>
+                                        MERN stack (MongoDB, Express, React, Node), Mongoose, Axios, Material UI, Firebase, FullCalendar, Gravatar
+                                    </li>
+                                </ul>
+                                <h3>BearShare - An e-commerce platform</h3>
+                                <ul>
+                                    <li>
+                                        Worked in a group of 4 to write code, build prototypes, and troubleshoot
+                                    </li>
+                                    <li>
+                                        Built out a product review system and a database model using Sequelize
+                                    </li>
+                                    <li>
+                                        Setup user authentication using Passport.js and Bcrypt.js to hash passwords
+                                    </li>
+                                    <li>
+                                        JavaScript, Node.js, Express, Handlebars.js, MySQL, Git Bash, Heroku, Bcrypt.js, and Passport
+                                    </li>
+                                </ul>
+                                <h3>Gif Your Mood - A mood matching game</h3>
+                                <ul>
+                                    <li>
+                                        Led a team of 4 to design, develop, debug, and deploy the web application
+                                    </li>
+                                    <li>
+                                        Responsible for connecting app to multiple web API’s
+                                    </li>
+                                    <li>
+                                        Utilized Git workflow to rapidly reach an minimum viable product
+                                    </li>
+                                    <li>
+                                        jQuery, UIKit, JokeAPI, Pexels, Giphy, GitHub
+                                    </li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link text-body collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Education
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                <h3>Certificate: Full Stack Web Development</h3>
+                                <ul>
+                                    <li>
+                                        24-week intensive program focused on gaining technical programming skills in HTML5, CSS3, JavaScript, jQuery, Bootstrap, Firebase, Node JS, MySQL, MongoDB, Express, Handlebars JS and React JS
+                                    </li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                              <h5 class="mb-0">
+                                <button class="btn btn-link text-body collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                  Skills
+                                </button>
+                              </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                              <div class="card-body">   
+                                <h3>
+                                    Front End 
+                                </h3>
+                                <ul>
+                                    <li>
+                                        HTML
+                                    </li>
+                                    <li>
+                                        CSS
+                                    </li>
+                                    <li>
+                                        JavaScript
+                                    </li>
+                                    <li>
+                                        Bootstrap
+                                    </li>
+                                    <li>
+                                        jQuery
+                                    </li>
+                                    <li>
+                                        Firebase
+                                    </li>
+                                    <li>
+                                        React
+                                    </li>
+                                </ul>
+                                <h3>Back End</h3>
+                                <ul>
+                                    <li>
+                                        Node.js
+                                    </li>
+                                    <li>
+                                        Express.js
+                                    </li>
+                                    <li>
+                                        RESTful APIs
+                                    </li>
+                                    <li>
+                                        MongoDB
+                                    </li>
+                                    <li>
+                                        MySQL
+                                    </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                </section>
             </div>
         </article> 
     </main>
@@ -80,9 +250,9 @@
         <div class="col-3">
             <!-- Copyright -->
             <small>© 2021 Kenneth Kopelson</small>  
-            <!-- link to instagram -->
         </div>
         <div class="col-8 d-flex justify-content-around">
+            <!-- Link to GitHub -->
             <a href="https://github.com/Kopelson" target="_blank">
                 <img src="./assets/images/githubIcon.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
             </a>
@@ -104,9 +274,12 @@
             </a>
         </div>
     </footer> 
-<!-- Bootstrap jQuery Script -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<!-- Popper -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.js"></script>
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.js"></script>
 <!-- Local Script -->
 <script src="./assets/js/script.js"></script>
 </body>
