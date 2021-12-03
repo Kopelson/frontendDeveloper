@@ -24,32 +24,27 @@
             <a class="navbar-brand" href="./index.html">
                 <img src="./assets/images/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
               </a>
-              <button class="navbar-toggler pt-1 pb-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="header-button">
+              <button class="gradient-background navbar-toggler pt-1 pb-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="header-button">
                 <span class="navbar-toggler-icon"></span>
               </button> 
             <!-- Bootstrap Tab Component -->  
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="nav nav-tabs take-all-space-you-can" id="nav-tab" role="tablist">
-
-                    <!-- <li class="nav-item take-all-space-you-can li-selector">
-                        <a class="nav-link text-body active" href="#show_all" id="nav-all-tab" data-toggle="tab" role="tab" aria-controls="show_all" aria-selected="true">All</a>
-                    </li> -->
-
                     <li class="nav-item take-all-space-you-can li-selector">
                         <!-- Link to first article tab -->
-                        <a class="nav-link text-body active" href="#nav-home" id="nav-home-tab" data-toggle="tab" role="tab" aria-controls="nav-home" aria-selected="true">HOME</a>
+                        <a class="nav-link text-body active" href="#nav-home" id="nav-home-tab"  aria-selected="true">HOME</a>
                     </li>
                     <li class="nav-item take-all-space-you-can li-selector">
                         <!-- Link to second article tab -->
-                        <a class="nav-link text-body" href="#nav-portfolio" id="nav-portfolio-tab" data-toggle="tab" role="tab" aria-controls="nav-portfolio" aria-selected="false">PORTFOLIO</a>
+                        <a class="nav-link text-body" href="#nav-portfolio" id="nav-portfolio-tab"  aria-selected="false">PORTFOLIO</a>
                     </li>
                     <li class="nav-item take-all-space-you-can li-selector">
                         <!-- Link to third article tab -->
-                        <a class="nav-link text-body" href="#nav-about" id="nav-about-tab" data-toggle="tab" role="tab" aria-controls="nav-about" aria-selected="false">ABOUT</a>
+                        <a class="nav-link text-body" href="#nav-about" id="nav-about-tab"  aria-selected="false">ABOUT</a>
                     </li>
                     <li class="nav-item take-all-space-you-can li-selector">
                         <!-- Link to fourth article tab -->
-                        <a class="nav-link text-body" href="#nav-resume" id="nav-resume-tab" data-toggle="tab" role="tab" aria-controls="nav-resume" aria-selected="false">RESUME</a>     
+                        <a class="nav-link text-body" href="#nav-resume" id="nav-resume-tab"aria-selected="false">RESUME</a>     
                     </li>
                 </ul>
             </div>
@@ -58,7 +53,7 @@
     <!-- Main -->
     <main class="col tab-content" id="nav-tabContent">
         <!-- Home -->
-        <div class="row tab-pane fade active in show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        <div class="row" id="nav-home">
             <article class="background-home">
                 <div class="flex-center">
                     <section class="m-3 p-3 border border-dark background-fade">
@@ -69,7 +64,7 @@
                             <p>A Full Stack Software Developer.</p>
                         </div>
                         <div class="flex-center">
-                            <a class="learn-more btn btn-light mt-5">Learn More</a>  
+                            <a class="gradient-background btn btn-light mt-5" href="#nav-about">Learn More</a>  
                         </div>
                     </section>
                 </div>  
@@ -77,14 +72,14 @@
         </div>
         
         <!-- Portfolio -->
-        <div class="row tab-pane fade active in show" id="nav-portfolio" role="tabpanel" aria-labelledby="nav-portfolio-tab">
+        <div class="row" id="nav-portfolio">
             <article class="background-portfolio">
                 <div class="m-3 p-3 border border-dark background-fade">
                     <h1>Portfolio</h1>
                 </div>
                 <div class="container-fluid">
                     <div class="row d-flex justify-content-center">
-                        <div class="col-md-6">
+                        <div class="col-12">
                             <div id="carousel" class="carousel slide" data-ride="carousel">
                                 <ol class="carousel-indicators">
                                 <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -93,20 +88,20 @@
                                 </ol>
                                 <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="./assets/images/Horiseon.png" class="d-block w-100 portfolio-img" alt="frontend">
+                                    <img src="./assets/images/Horiseon.png" class="d-block w-100 carousel-img" alt="frontend">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h3 class="bg-dark">Hello World!</h3>
             
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="./assets/images/EmployeeTracker.gif" class="d-block w-100 portfolio-img" alt="backend">
+                                    <img src="./assets/images/EmployeeTracker.gif" class="d-block w-100 carousel-img" alt="backend">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h3 class="bg-dark">I'm a Full Stack Web Developer</h3>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="./assets/images/EmployeeDirectory.png" class="d-block w-100 portfolio-img" alt="full stack">
+                                    <img src="./assets/images/EmployeeDirectory.png" class="d-block w-100 carousel-img" alt="full stack">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h3 class="bg-dark">MERN Stack is where I started...</h3>
                                     </div>
@@ -115,81 +110,76 @@
                         </div>
                         </div>
                     </div>
-                    <div class="row d-flex justify-content-center">
-                        <div class="m-3 p-3 border border-dark background-fade">
-                            <h2>Projects</h2>
+                    <div class="row d-flex justify-content-center"> 
+                        <div class="card col-lg-6 m-2">
+                            <h3 class="">The Smoking Gun</h3>
+                            <img src="./assets/images/theSmokingGun.png" class="card-img" alt="the smoking gun app" />
+                            <ul class="list-group text-left mb-2">
+                                <li class="list-group-item"> 
+                                    Collaborated with 4 developers and created a full stack application in 3 weeks
+                                </li>
+                                <li class="list-group-item">
+                                    Backend developer - created a RESTful API using Node and Mongoose
+                                </li>
+                                <li class="list-group-item">
+                                    Worked with React Hooks to create a classless react app 
+                                </li>
+                                <li class="list-group-item">
+                                    MERN stack (MongoDB, Express, React, Node), Mongoose, Axios, Material UI, Firebase, FullCalendar, Gravatar
+                                </li>
+                            </ul>
+
+                            <div class="col-12">
+                                <a class="btn btn-dark col-md-2 mb-2" href="https://the-smoking-gun.herokuapp.com/" target="_blank">Live Link</a>
+                                <a class="btn btn-dark col-md-2 mb-2" href="https://github.com/UWB-Bandits/the-smoking-gun" target="_blank">Repository</a>
+                            </div>
                         </div>
-                        <div class="row d-flex justify-content-center"> 
-                            <div class="card col-lg-6 m-2">
-                                <h3 class="">The Smoking Gun</h3>
-                                <img src="./assets/images/theSmokingGun.png" class="card-img" alt="the smoking gun app" />
-                                <ul class="list-group text-left mb-2">
-                                    <li class="list-group-item"> 
-                                        Collaborated with 4 developers and created a full stack application in 3 weeks
-                                    </li>
-                                    <li class="list-group-item">
-                                        Backend developer - created a RESTful API using Node and Mongoose
-                                    </li>
-                                    <li class="list-group-item">
-                                        Worked with React Hooks to create a classless react app 
-                                    </li>
-                                    <li class="list-group-item">
-                                        MERN stack (MongoDB, Express, React, Node), Mongoose, Axios, Material UI, Firebase, FullCalendar, Gravatar
-                                    </li>
-                                </ul>
-
-                                <div class="col-12">
-                                    <a class="btn btn-dark col-md-2 mb-2" href="https://the-smoking-gun.herokuapp.com/" target="_blank">Live Link</a>
-                                    <a class="btn btn-dark col-md-2 mb-2" href="https://github.com/UWB-Bandits/the-smoking-gun" target="_blank">Repository</a>
-                                </div>
-                            </div>
-                            <div class="card col-md-6 m-2">
-                                <h3 class="">BearShare</h3>
-                                <img src="./assets/images/bearshare.png" class="card-img"  alt="bear share app" />
-                                
-                                <ul class="list-group text-left mb-2">
-                                    <li class="list-group-item">
-                                        Worked in a group of 4 to write code, build prototypes, and troubleshoot
-                                    </li>
-                                    <li class="list-group-item">
-                                        Built out a product review system and a database model using Sequelize
-                                    </li>
-                                    <li class="list-group-item">
-                                        Setup user authentication using Passport.js and Bcrypt.js to hash passwords
-                                    </li>
-                                    <li class="list-group-item">
-                                        JavaScript, Node.js, Express, Handlebars.js, MySQL, Git Bash, Heroku, Bcrypt.js, and Passport
-                                    </li>
-                                </ul> 
-                                <div class="col-12">
-                                    <a class="btn btn-dark col-md-2 mb-2" href="https://nameless-plains-06669.herokuapp.com/" target="_blank">Live Link</a>
-                                    <a class="btn btn-dark col-md-2 mb-2" href="https://github.com/jre23/bear-share" target="_blank">Repository</a>
-                                </div>
-                            </div>
+                        <div class="card col-md-6 m-2">
+                            <h3 class="">BearShare</h3>
+                            <img src="./assets/images/bearshare.png" class="card-img"  alt="bear share app" />
                             
-                            <div class="card col-md-6 m-2">
-                                <h3 class="">Gif Your Mood</h3>
-                                <img src="./assets/images/gifYourMood.jpg" class="card-img"  alt="gif your mood app" />
-                                
-                                <ul class="list-group text-left mb-2">
-                                    <li class="list-group-item">
-                                        Led a team of 4 to design, develop, debug, and deploy the web application
-                                    </li>
-                                    <li class="list-group-item">
-                                        Responsible for connecting app to multiple web API’s
-                                    </li>
-                                    <li class="list-group-item">
-                                        Utilized Git workflow to rapidly reach an minimum viable product
-                                    </li>
-                                    <li class="list-group-item">
-                                        jQuery, UIKit, JokeAPI, Pexels, Giphy, GitHub
-                                    </li>
-                                </ul>    
+                            <ul class="list-group text-left mb-2">
+                                <li class="list-group-item">
+                                    Worked in a group of 4 to write code, build prototypes, and troubleshoot
+                                </li>
+                                <li class="list-group-item">
+                                    Built out a product review system and a database model using Sequelize
+                                </li>
+                                <li class="list-group-item">
+                                    Setup user authentication using Passport.js and Bcrypt.js to hash passwords
+                                </li>
+                                <li class="list-group-item">
+                                    JavaScript, Node.js, Express, Handlebars.js, MySQL, Git Bash, Heroku, Bcrypt.js, and Passport
+                                </li>
+                            </ul> 
+                            <div class="col-12">
+                                <a class="btn btn-dark col-md-2 mb-2" href="https://nameless-plains-06669.herokuapp.com/" target="_blank">Live Link</a>
+                                <a class="btn btn-dark col-md-2 mb-2" href="https://github.com/jre23/bear-share" target="_blank">Repository</a>
+                            </div>
+                        </div>
+                        
+                        <div class="card col-md-6 m-2">
+                            <h3 class="">Gif Your Mood</h3>
+                            <img src="./assets/images/gifYourMood.jpg" class="card-img"  alt="gif your mood app" />
+                            
+                            <ul class="list-group text-left mb-2">
+                                <li class="list-group-item">
+                                    Led a team of 4 to design, develop, debug, and deploy the web application
+                                </li>
+                                <li class="list-group-item">
+                                    Responsible for connecting app to multiple web API’s
+                                </li>
+                                <li class="list-group-item">
+                                    Utilized Git workflow to rapidly reach an minimum viable product
+                                </li>
+                                <li class="list-group-item">
+                                    jQuery, UIKit, JokeAPI, Pexels, Giphy, GitHub
+                                </li>
+                            </ul>    
 
-                                <div class="col-12">
-                                    <a class="btn btn-dark col-md-2 mb-2" href="https://kopelson.github.io/gifYourMood/" target="_blank">Live Link</a>
-                                    <a class="btn btn-dark col-md-2 mb-2" href="https://github.com/Kopelson/gifYourMood" target="_blank">Repository</a>
-                                </div>
+                            <div class="col-12">
+                                <a class="btn btn-dark col-md-2 mb-2" href="https://kopelson.github.io/gifYourMood/" target="_blank">Live Link</a>
+                                <a class="btn btn-dark col-md-2 mb-2" href="https://github.com/Kopelson/gifYourMood" target="_blank">Repository</a>
                             </div>
                         </div>
                     </div>
@@ -198,7 +188,7 @@
         </div>
         
         <!-- About -->
-        <div class="row tab-pane fade active in show " id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+        <div class="row" id="nav-about">
             <article class="background-about">
                 <h1>Hi I'm Ken.</h1>
                 <img src="./assets/images/me.jpeg" alt="Ken Kopelson" class="card-img" />
@@ -211,14 +201,14 @@
         </div>
          
         <!-- Resume -->
-        <div class="row tab-pane fade active in show" id="nav-resume" role="tabpanel" aria-labelledby="nav-resume-tab">
+        <div class="row" id="nav-resume">
             <article class="background-resume">
                 <div class="row m-3 p-3 border border-dark background-fade">
                     <div class="col-12 d-flex justify-content-center mt-5">
                         <h1>Download Resume</h1>
                     </div>
                     <div class="col-12 d-flex justify-content-center mt-5">
-                        <a class="btn btn-light" href="./assets/pdf/resume.pdf" target="_blank">Here!</a> 
+                        <a class="gradient-background btn btn-light" href="./assets/pdf/resume.pdf" target="_blank">Here!</a> 
                     </div>
                 </div>
                 
@@ -231,23 +221,23 @@
         
         <div class="col-12 d-flex justify-content-around">
             <!-- Link to GitHub -->
-            <a href="https://github.com/Kopelson" target="_blank">
+            <a href="https://github.com/Kopelson" class="icon-hover" target="_blank">
                 <img src="./assets/images/githubIcon.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
             </a>
             <!-- link to facebook -->
-            <a href="http://www.facebook.com/kenj.kop" target="_blank">
+            <a href="http://www.facebook.com/kenj.kop" class="icon-hover"  target="_blank">
                 <img src="./assets/images/facebookIcon.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
             </a>
             <!-- link to linkedin -->
-            <a href="http://www.linkedin.com/in/kennethkopelson" target="_blank">
+            <a href="http://www.linkedin.com/in/kennethkopelson" class="icon-hover"  target="_blank">
                 <img src="./assets/images/linkedinIcon.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
             </a>
             <!-- link to youtube -->
-            <a href="http://www.youtube.com/channel/UCje8OyZsjFirdL_n3rIUbNQ/" target="_blank">
+            <a href="http://www.youtube.com/channel/UCje8OyZsjFirdL_n3rIUbNQ/" class="icon-hover"  target="_blank">
                 <img src="./assets/images/youtubeIcon.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
             </a>
             <!-- link to email -->
-            <a href="mailto:kennethkopelson@gmail.com" target="_blank">
+            <a href="mailto:kennethkopelson@gmail.com" class="icon-hover" target="_blank">
                 <img src="./assets/images/email.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
             </a>
         </div>

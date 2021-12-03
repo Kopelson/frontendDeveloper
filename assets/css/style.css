@@ -22,6 +22,12 @@ body {
 	animation: gradient 15s ease infinite;
 }
 
+.gradient-background:hover {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 4s ease infinite;
+}
+
 .background-resume {
     background-color: #23d5ab;
 }
@@ -45,6 +51,7 @@ body {
 		background-position: 0% 50%;
 	}
 }
+
 .background-fade {
     background-color: rgba(255, 255, 255, .5);
 }
@@ -96,8 +103,9 @@ main {
     width:100%;
 }
 
-.portfolio-img {
-    height: 60vh;
+.carousel-img {
+    width: 100%;
+    height: 50vh;
 }
 
 .card-img {
@@ -114,3 +122,17 @@ main {
 .card {
     margin-bottom: 15px;
 }
+
+.icon-hover:hover {
+    border-bottom: 3px solid gray;
+    
+}
+
+.icon-hover img:hover {
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+    transition: .4s;
+    
+}
+
